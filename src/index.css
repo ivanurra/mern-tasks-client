@@ -322,7 +322,12 @@ aside  {
 }
 
 .enlace-cuenta {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: block;
   opacity: .7;
+  color: #2f3848;
+}
+
+.enlace-cuenta:hover {
+  color: #005eff;
 }
