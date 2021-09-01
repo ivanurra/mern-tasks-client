@@ -36,7 +36,10 @@ const NuevaCuenta = () => {
   return (
     <div className="form-usuario">
       <div className="contenedor-form sombra-dark">
-        <h1>Sign Up</h1>
+      <h1>
+          MERN<span>Tasks</span>
+        </h1>
+        <h2>Sign up</h2>
         <form onSubmit={onSubmit}>
           <div className="campo-form">
             <label htmlFor="email">Name</label>
