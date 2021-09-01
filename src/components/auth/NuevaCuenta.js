@@ -36,7 +36,7 @@ const NuevaCuenta = () => {
   return (
     <div className="form-usuario">
       <div className="contenedor-form sombra-dark">
-        <h1>Register</h1>
+        <h1>Sign Up</h1>
         <form onSubmit={onSubmit}>
           <div className="campo-form">
             <label htmlFor="email">Name</label>
@@ -44,7 +44,7 @@ const NuevaCuenta = () => {
               type="text"
               id="nombre"
               name="nombre"
-              placeholder="Your name"
+              placeholder="Your name."
               value={nombre}
               onChange={onChange}
             />
@@ -55,7 +55,7 @@ const NuevaCuenta = () => {
               type="email"
               id="email"
               name="email"
-              placeholder="Your email"
+              placeholder="Your email."
               value={email}
               onChange={onChange}
             />
@@ -66,18 +66,18 @@ const NuevaCuenta = () => {
               type="password"
               id="password"
               name="password"
-              placeholder="Your password"
+              placeholder="Your password (At least 6 characters)."
               value={password}
               onChange={onChange}
             />
           </div>
           <div className="campo-form">
-            <label htmlFor="confirmar">Confirm Password</label>
+            <label htmlFor="confirmar">Repeat Password</label>
             <input
               type="password"
               id="confirmar"
               name="confirmar"
-              placeholder="Confirm password"
+              placeholder="Repeat password."
               value={confirmar}
               onChange={onChange}
             />

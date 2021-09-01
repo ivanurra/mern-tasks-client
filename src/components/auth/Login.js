@@ -64,7 +64,7 @@ const Login = () => {
         </form>
 
         <Link to={"/nueva-cuenta"} className="enlace-cuenta">
-          Don't have a user? Sign up here.
+          Don't have an account? Sign up here.
         </Link>
       </div>
     </div>
