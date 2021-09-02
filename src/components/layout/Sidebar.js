@@ -1,4 +1,5 @@
 import React from "react";
+import NuevoProyecto from "../proyectos/NuevoProyecto";
 
 const Sidebar = () => {
   return (
@@ -6,6 +7,7 @@ const Sidebar = () => {
       <h1>
         MERN<span>Tasks</span>
       </h1>
+      <NuevoProyecto />
       <div className="proyectos">
         <h2>Your Projects</h2>
       </div>
