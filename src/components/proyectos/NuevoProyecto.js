@@ -10,7 +10,7 @@ const NuevoProyecto = () => {
   const { nombre } = proyecto;
 
   // Lee los contenidos del input
-  const onChangeProyecto = e => {
+  const onChangeProyecto = (e) => {
     guardarProyecto({
       ...proyecto,
       [e.target.name]: e.target.value,
@@ -18,7 +18,7 @@ const NuevoProyecto = () => {
   };
 
   // Cuando el usuario envia un proyecto
-  const onSubmitProyecto = e => {
+  const onSubmitProyecto = (e) => {
     e.preventDefault();
 
     // Validar el proyecto
@@ -26,7 +26,7 @@ const NuevoProyecto = () => {
     // Agregar al State
 
     // Reiniciar el form
-  }
+  };
 
   return (
     <Fragment>

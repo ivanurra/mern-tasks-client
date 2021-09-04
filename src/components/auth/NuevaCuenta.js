@@ -36,7 +36,7 @@ const NuevaCuenta = () => {
   return (
     <div className="form-usuario">
       <div className="contenedor-form sombra-dark">
-      <h1>
+        <h1>
           MERN<span>Tasks</span>
         </h1>
         <h2>Sign up</h2>
