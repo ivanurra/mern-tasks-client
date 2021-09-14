@@ -12,13 +12,17 @@ const ListadoTareas = () => {
     <Fragment>
       <h2>Project: Virtual Shop</h2>
       <ul className="listado-tareas">
-         {tareasProyecto.length === 0 ? (<li className="tarea"><p>No tasks yet</p></li>) : (tareasProyecto.map(tarea => (
-             <Tarea 
-                 tarea={tarea}
-             />
-         )))
-         } 
+        {tareasProyecto.length === 0 ? (
+          <li className="tarea">
+            <p>No tasks yet</p>
+          </li>
+        ) : (
+          tareasProyecto.map((tarea) => <Tarea tarea={tarea} />)
+        )}
       </ul>
+      <button type="button" className="btn btn-eliminar">
+        Delete project &times;
+      </button>
     </Fragment>
   );
 };
