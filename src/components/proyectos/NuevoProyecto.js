@@ -54,9 +54,7 @@ const NuevoProyecto = () => {
             value="Add Project"
           />
         </form>
-      ) : (
-        null
-      )}
+      ) : null}
     </Fragment>
   );
 };
