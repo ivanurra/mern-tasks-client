@@ -10,6 +10,7 @@ const FormTarea = () => {
   if (!proyecto) return null;
 
   // Array destructuring para extraer el proyecto actual
+  // eslint-disable-next-line no-unused-vars
   const [proyectoActual] = proyecto;
 
   return (

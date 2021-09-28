@@ -9,10 +9,11 @@ const ListadoProyectos = () => {
 
   useEffect(() => {
     obtenerProyectos();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Revisar si proyectos tiene contenido.
-  if (proyectos.length === 0) return null;
+  if (proyectos.length === 0) return <p>No projects. Back to work!</p>;
 
   return (
     <ul className="listado-proyectos">
