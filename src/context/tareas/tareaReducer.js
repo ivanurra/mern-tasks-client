@@ -1,4 +1,4 @@
-import { TAREAS_PROYECTO, AGREGAR_TAREA } from "../../types";
+import { TAREAS_PROYECTO, AGREGAR_TAREA, VALIDAR_TAREA } from "../../types";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) => {
@@ -14,6 +14,11 @@ export default (state, action) => {
       return {
         ...state,
         tareas: [...state.tareas, action.payload],
+      };
+    case VALIDAR_TAREA:
+      return {
+        ...state,
+        errortarea: true,
       };
     default:
       return state;
