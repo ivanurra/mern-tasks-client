@@ -9,7 +9,7 @@ const ListadoProyectos = () => {
 
   useEffect(() => {
     obtenerProyectos();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Revisar si proyectos tiene contenido.
