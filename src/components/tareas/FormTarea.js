@@ -59,12 +59,14 @@ const FormTarea = () => {
       validarTarea();
       return;
     }
-    // pasar la validación
 
-    // agregar la nueva tarea al state de tareas
-    tarea.proyectoId = proyectoActual.id;
-    tarea.estado = false;
-    agregarTarea(tarea);
+    // Establecer si es edición o si es nueva tarea
+    if (tareaseleccionada === null) {
+      // agregar la nueva tarea al state de tareas
+      tarea.proyectoId = proyectoActual.id;
+      tarea.estado = false;
+      agregarTarea(tarea);
+    }
 
     // Obtener y filtrar las tareas del proyecto actual
     obtenerTareas(proyectoActual.id);
@@ -94,7 +96,7 @@ const FormTarea = () => {
             className="btn btn-primario btn-submit btn-block"
             placeholder="Name Task..."
             name="nombre"
-            value={tareaseleccionada ? 'Edit task' : 'Add Task'}
+            value={tareaseleccionada ? "Edit task" : "Add Task"}
           />
         </div>
       </form>
